@@ -110,7 +110,7 @@ a {
   position: relative;
   min-height: 75vh;
   padding: 40px 0;
-  background-image: url('https://devwaiyanlinn.github.io/Travel-And-Tour/assets/images/contact.jpg');
+  background-image: url('../assets/images/contact.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
