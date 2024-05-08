@@ -4,9 +4,9 @@
 @import url('./animation.css');
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -36,8 +36,8 @@ body {
 }
 
 .mobile-menu {
-  background-color: transparent;
   display: block;
+  background-color: transparent;
 }
 
 #popular-destination {
@@ -45,14 +45,14 @@ body {
 }
 
 #popular-destination h3 {
-  text-align: center;
   margin-top: 10px;
+  text-align: center;
 }
 
 .popular-destination-image {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 20px -10px 0;
 }
 
@@ -68,8 +68,8 @@ body {
 
 .top-destination-place {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 20px -10px 0;
 }
 
@@ -77,8 +77,8 @@ body {
   gap: 10px;
   width: 100%;
   padding: 10px;
-  line-height: 1.3rem;
   font-size: 0.8rem;
+  line-height: 1.3rem;
 }
 
 .top-destination-detail {
@@ -86,16 +86,16 @@ body {
 }
 
 .top-destination-button {
-  background-color: #fff;
-  color: slateblue;
   padding: 10px;
+  background-color: #fff;
   font-size: 0.8rem;
+  color: slateblue;
 }
 
 .copy-right {
   padding: 20px;
-  text-align: center;
   font-size: 0.8rem;
+  text-align: center;
 }
 
 a {
@@ -104,6 +104,38 @@ a {
 
 .logo img {
   width: 60px;
+}
+
+#contact {
+  position: relative;
+  min-height: 75vh;
+  padding: 40px 0;
+  background-image: url('/assets/images/contact.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#contact>div {
+  display: flex;
+  justify-content: center;
+}
+
+#contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.contact-form {
+  z-index: 1;
+  width: 100%;
+  max-width: 300px;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,5 +157,9 @@ a {
 
   .logo img {
     width: 80px;
+  }
+
+  #contact>div {
+    justify-content: end;
   }
 }

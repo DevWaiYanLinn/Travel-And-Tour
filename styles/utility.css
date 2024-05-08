@@ -5,14 +5,31 @@
 .title {
   text-align: center;
   font-size: 1.1rem;
-  font-weight: 700  ;
+  font-weight: 700;
 }
 
-
 .container {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.form-group {
+  margin: 25px 0;
+}
+
+.form-input {
+  background-color: #fff;
+  padding: 10px 8px;
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 20px;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #000;
+}
