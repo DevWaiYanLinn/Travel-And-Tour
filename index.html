@@ -10,6 +10,12 @@
 </head>
 
 <body class="roboto-regular">
+    <!-- <section class="modal">
+        <div class="modal-body">
+            <img src="assets/images/banner-4.jpeg"
+                alt="img" loading="lazy">
+        </div>
+    </section> -->
     <section class="container">
         <nav class="nav">
             <a href="#" class="logo">
@@ -43,12 +49,55 @@
     </section>
     <section class="banner" id="slider">
         <div class="slider-list">
-            <img class="slider-item index" src="assets/images/banner.jpg"
-                alt="img" loading="lazy">
-            <img class="slider-item" src="assets/images/banner-4.jpeg" alt="img"
-                loading="lazy">
-            <img class="slider-item" src="assets/images/banner-5.jpeg" alt="img"
-                loading="lazy">
+            <div class="slider-item index skeleton-container">
+                <div class="skeleton full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-image">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2">
+                        </rect>
+                        </rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                </div>
+                <img data-src="assets/images/banner.jpg" alt="img" width="100%"
+                    height="100%">
+            </div>
+            <div class="slider-item skeleton-container">
+                <div class="skeleton full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-image">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2">
+                        </rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                </div>
+                <img data-src="assets/images/banner-4.jpeg" alt="img"
+                    width="100%" height="100%">
+            </div>
+            <div class="slider-item skeleton-container">
+                <div class="skeleton full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-image">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2">
+                        </rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                </div>
+                <img data-src="assets/images/banner-5.jpeg" alt="img"
+                    width="100%" height="100%">
+            </div>
         </div>
         <button class="left-arrow">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
@@ -79,7 +128,7 @@
             <h3 class="roboto-thin">Japan's best tourist destination</h3>
             <div class="popular-destination-image">
                 <div class="popular-destination-content skeleton-container">
-                    <div class="skeleton">
+                    <div class="skeleton destination-skeleton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50"
                             height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1"
@@ -96,7 +145,7 @@
                         alt="destination" class="img-fluid">
                 </div>
                 <div class="popular-destination-content skeleton-container">
-                    <div class="skeleton">
+                    <div class="skeleton destination-skeleton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50"
                             height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1"
@@ -113,7 +162,7 @@
                         alt="destination" class="img-fluid">
                 </div>
                 <div class="popular-destination-content skeleton-container">
-                    <div class="skeleton">
+                    <div class="skeleton destination-skeleton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50"
                             height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1"
@@ -130,7 +179,7 @@
                         alt="destination" class="img-fluid">
                 </div>
                 <div class="popular-destination-content skeleton-container">
-                    <div class="skeleton">
+                    <div class="skeleton destination-skeleton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50"
                             height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1"
@@ -154,7 +203,7 @@
             <h2 class="title">Top Destination</h2>
             <div class="top-destination-place roboto-thin">
                 <div class="top-destination-content skeleton-container">
-                    <div class="skeleton">
+                    <div class="skeleton destination-skeleton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50"
                             height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1"
@@ -179,7 +228,7 @@
                     <button class="top-destination-button">READ DETAIL</button>
                 </div>
                 <div class="top-destination-content skeleton-container">
-                    <div class="skeleton">
+                    <div class="skeleton destination-skeleton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50"
                             height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1"
@@ -204,7 +253,7 @@
                     <button class="top-destination-button">READ DETAIL</button>
                 </div>
                 <div class="top-destination-content skeleton-container">
-                    <div class="skeleton">
+                    <div class="skeleton destination-skeleton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50"
                             height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1"
@@ -229,7 +278,7 @@
                     <button class="top-destination-button">READ DETAIL</button>
                 </div>
                 <div class="top-destination-content skeleton-container">
-                    <div class="skeleton">
+                    <div class="skeleton destination-skeleton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50"
                             height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1"
@@ -254,7 +303,7 @@
                     <button class="top-destination-button">READ DETAIL</button>
                 </div>
                 <div class="top-destination-content skeleton-container">
-                    <div class="skeleton">
+                    <div class="skeleton destination-skeleton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50"
                             height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1"
@@ -279,7 +328,7 @@
                     <button class="top-destination-button">READ DETAIL</button>
                 </div>
                 <div class="top-destination-content skeleton-container">
-                    <div class="skeleton">
+                    <div class="skeleton destination-skeleton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50"
                             height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1"
