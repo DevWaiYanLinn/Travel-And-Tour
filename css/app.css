@@ -197,6 +197,17 @@ a {
   max-width: 300px;
 }
 
+.map-container {
+  z-index: 1;
+  width: 100%;
+}
+
+#contact>div {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
   .banner {
     height: 500px;
@@ -229,6 +240,11 @@ a {
 
   .logo img {
     width: 80px;
+  }
+
+  .jp-map {
+    z-index: 1;
+    cursor: pointer;
   }
 
   #contact>div {
