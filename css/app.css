@@ -16,6 +16,7 @@ body {
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
@@ -23,12 +24,17 @@ body {
 
 .nav-list {
   display: none;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
 
+.nav-list.active {
+  display: block;
+}
+
 .nav-list .nav-item {
-  margin: 0 20px;
+  margin: 20px 0;
 }
 
 .banner {
@@ -45,8 +51,8 @@ body {
   height: 100%;
 }
 
-.slider-item.index {
-  z-index: 1;
+#slider.ready .slider-item {
+  transition: all 0.5s;
 }
 
 .slider-item img {
@@ -55,6 +61,14 @@ body {
 
 .slider-list {
   height: 100%;
+}
+
+#slider:has(.slider-item:first-child.index)>.left-arrow {
+  visibility: hidden;
+}
+
+#slider:has(.slider-item:last-child.index)>.right-arrow {
+  display: none;
 }
 
 .left-arrow {
@@ -161,7 +175,7 @@ a {
   background-size: cover;
 }
 
-#contact > div {
+#contact>div {
   display: flex;
   justify-content: center;
 }
@@ -189,7 +203,16 @@ a {
   }
 
   .nav-list {
+    width: unset;
     display: flex;
+  }
+
+  .nav-list .nav-item {
+    margin: 0 20px;
+  }
+
+  .nav-list.active {
+    display: none;
   }
 
   .mobile-menu {
@@ -208,7 +231,7 @@ a {
     width: 80px;
   }
 
-  #contact > div {
+  #contact>div {
     justify-content: end;
   }
 }

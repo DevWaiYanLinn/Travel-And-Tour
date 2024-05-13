@@ -1,27 +1,38 @@
 const slider = document.querySelector('#slider');
 const leftArrow = slider.querySelector('.left-arrow')
 const rightArrow = slider.querySelector('.right-arrow')
-const images = Array.from(slider.querySelectorAll('.slider-item'))
+const sliderItems = Array.from(slider.querySelectorAll('.slider-item'))
+const mobileMenu = document.querySelector('.mobile-menu')
+const navList = document.querySelector('.nav-list')
+
+mobileMenu.onclick = () => {
+    navList.classList.toggle('active')
+}
+
 let counter = 0;
 
-images.forEach((img, i) => {
-    img.style.left = `${i * 100}%`
+sliderItems.forEach((sliderItem, i) => {
+    sliderItem.style.left = `${i * 100}%`
 })
 
+slider.classList.add('ready')
+
 function slide() {
-    images.forEach((img) => {
-        img.style.transform = `translateX(-${counter * 100}%)`
+    sliderItems.forEach((sliderItem) => {
+        sliderItem.style.transform = `translateX(-${counter * 100}%)`
     })
+    slider.querySelector('.index').classList.remove('index')
+    sliderItems[counter].classList.add('index')
 }
 
 leftArrow.onclick = function () {
-    if (counter === 0) return
+    if (!counter) return
     counter += -1
     slide()
 }
 
 rightArrow.onclick = function () {
-    if (counter === images.length - 1) return
+    if (counter === sliderItems.length - 1) return
     counter += 1
     slide()
 }

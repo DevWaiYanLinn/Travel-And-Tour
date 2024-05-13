@@ -1,0 +1,17 @@
+{
+  "name": "tour",
+  "version": "1.0.0",
+  "description": "Japan Tour is a static website. It utilizes HTML, CSS, and JavaScript without relying on any library or framework. The website employs lazy loading for optimized performance and includes a slider implemented using pure CSS and JavaScript.",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "laravel-mix": "^6.0.49"
+  }
+}
